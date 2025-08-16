@@ -59,11 +59,11 @@ Run the script as module using -m
 
 ## ⚙️ Options
 
-| Option           | Required | Description                                                                        |
-|------------------|----------|------------------------------------------------------------------------------------|
-| `--time-start`   | ✅ Yes    | Compartment OCID or display name                                                   |
-| `--time-end`     | ✅ Yes    | Start time (format: `YYYY-MM-DD`)                                                  |
-| `--type`         | ✅ Yes    | Report type, one of `audit`, `success`,`fail`,`roles`,`access`, `delivery_failure` |
-| `--output-dir`   | ❌ No     | Output directory (default: `reports`)                                              |
-| `--compartment`    | ❌ No     | OCI Compartment to search (default: `root`)                                        |
-| `--log-level`    | ❌ No     | Logging verbosity: `DEBUG`, `INFO` (default), `INFO`                               |
+| Option                    | Required | Description                                                                        |
+|---------------------------|----------|------------------------------------------------------------------------------------|
+| `--time-start`            | ✅ Yes    | Compartment OCID or display name                                                   |
+| `--time-end`              | ✅ Yes    | Start time (format: `YYYY-MM-DD`)                                                  |
+| `--type`                  | ✅ Yes    | Report type, one of `audit`, `success`,`fail`,`roles`,`access`, `delivery_failure` |
+| <code>--output-dir</code> | ❌ No     | Output directory (default: `reports`)                                              |
+| `--compartment`           | ❌ No     | OCI Compartment to search (default: `root`)                                        |
+| `--log-level`             | ❌ No     | Logging verbosity: `DEBUG`, `INFO` (default), `INFO`                               |

@@ -55,15 +55,24 @@ Run the script as module using -m
  --time-end 2025-03-30 --type roles \
  ```
 
+
+```bash
+usage: audit_reports.py [-h] --time-start TIME_START --time-end TIME_END --type
+                        {Report.audit,Report.roles,Report.access,Report.fail,Report.success,Report.delivery_failure}
+                        [-o OUTPUT_DIR] [--log-level LOG_LEVEL] [--compartment COMPARTMENT]
+
+options:
+  -h, --help            show this help message and exit
+  --time-start TIME_START
+  --time-end TIME_END
+  --type {Report.audit,Report.roles,Report.access,Report.fail,Report.success,Report.delivery_failure}
+                        Report type
+  -o OUTPUT_DIR, --output-dir OUTPUT_DIR
+                        Output folder for the CSV file (default: ./reports).
+  --log-level LOG_LEVEL
+                        Log level: DEBUG|INFO|WARNING|ERROR|CRITICAL (default: INFO).
+  --compartment COMPARTMENT
+                        Specify the compartment where an identity domain exists.
+```
 ---
 
-## ⚙️ Options
-
-| Option                     | Required | Description                                                                        |
-|----------------------------|----------|------------------------------------------------------------------------------------|
-| `--time-start`             | ✅ Yes    | Compartment OCID or display name                                                   |
-| `--time-end`               | ✅ Yes    | Start time (format: `YYYY-MM-DD`)                                                  |
-| `--type`                   | ✅ Yes    | Report type, one of `audit`, `success`,`fail`,`roles`,`access`, `delivery_failure` |
-| `--output-dir`             | ❌ No     | Output directory (default: `reports`)                                              |
-| <code>--compartment</code> | ❌ No     | OCI Compartment to search (default: `root`)                                        |
-| `--log-level`              | ❌ No     | Logging verbosity: `DEBUG`, `INFO` (default), `INFO`                               |

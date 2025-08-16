@@ -1,0 +1,18 @@
+.env
+/config/.env
+
+.idea/*
+#
+.idea
+
+.venv
+
+reports/*
+reports
+
+# Ignore Python cache directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
